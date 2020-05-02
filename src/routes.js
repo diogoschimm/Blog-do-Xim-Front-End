@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Login from './Pages/Account/Login/Login';
 
-import Blog from './Blog/Blog';
+import App from './Blog/App';
 import Home from './Blog/Home';
 import Sobre from './Blog/Sobre';
 
@@ -12,9 +12,9 @@ function BlogRoute({children, ...rest}) {
         <Route
             {...rest}
             render={() =>
-                <Blog count="10">
+                <App count="10">
                     {(children)}
-                </Blog>
+                </App>
             } />
     )
 } 

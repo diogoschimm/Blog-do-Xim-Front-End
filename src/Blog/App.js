@@ -8,7 +8,7 @@ import Menu from './Components/Menu';
 import Header from './Components/Header';   
 import Footer from './Components/Footer';   
 
-function Blog(props) {
+function App(props) {
  
     console.log(props);
 
@@ -25,4 +25,4 @@ function Blog(props) {
 const mapStateToProps = state => ({ state: state.stateContents });
 const mapDispatchToProps = dispatch => bindActionCreators(actions, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(Blog); 
+export default connect(mapStateToProps, mapDispatchToProps)(App); 
