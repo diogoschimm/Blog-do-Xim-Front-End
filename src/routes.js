@@ -12,7 +12,7 @@ function BlogRoute({children, ...rest}) {
         <Route
             {...rest}
             render={() =>
-                <Blog>
+                <Blog count="10">
                     {(children)}
                 </Blog>
             } />

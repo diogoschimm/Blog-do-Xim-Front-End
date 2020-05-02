@@ -8,13 +8,15 @@ import Menu from './Components/Menu';
 import Header from './Components/Header';   
 import Footer from './Components/Footer';   
 
-function Blog({children}) {
+function Blog(props) {
  
+    console.log(props);
+
     return (
         <Fragment>
             <Menu />
             <Header /> 
-            {(children)}
+            {(props.children)}
             <Footer />
         </Fragment>
     );
