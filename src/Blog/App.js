@@ -1,24 +1,24 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import * as actions from '../Redux/Actions';
 
-import Menu from './Components/Menu';
-import Header from './Components/Header';   
-import Footer from './Components/Footer';   
+import Menu from './Layout/Menu';
+import Header from './Layout/Header';   
+import Footer from './Layout/Footer';   
 
 function App(props) {
  
     console.log(props);
 
     return (
-        <Fragment>
+        <>
             <Menu />
             <Header /> 
             {(props.children)}
             <Footer />
-        </Fragment>
+        </>
     );
 }
 
